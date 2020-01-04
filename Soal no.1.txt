@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int z, kura=9999;
+    float x1, x2, x3, x4;
+    int x=365;
+    z=x/90;
+  
+    x1= kura-(kura*0.211)+1;
+    printf("Jumlah kura-kura sulcatar %i",kura);
+    printf("\n");
+    printf("jumlah kura-kura periode pertama %f",x1);
+    printf("\n");
+    x2=x1-(x1*0.211)+1;
+    printf("jumlah kura-kura periode kedua %f",x2);
+    printf("\n");
+    x3=x2-(x2*0.211)+1;
+    printf("jumlah kura-kura periode ketiga %f",x3);
+     printf("\n");
+    x4=x3-(x3*0.211)+1;
+    printf("jumlah kura-kura periode keempat %f",x4);
+    printf("\n");
+    printf("Jadi jumlah kura-kura sulcatar setelah 365 hari adalah %f",x4);
+    return 0;
+}

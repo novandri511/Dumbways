@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+   int jarak_kantor=64500;
+   int sisajarakpertama, sisajarakkedua,waktusisaterakhir,waktudetik,waktumenit,waktujam;
+   sisajarakpertama= jarak_kantor-(3*(23*60)); 
+//   printf("ini sisa jarak pertama %i",sisajarakpertama);
+//   printf("\n");
+   sisajarakkedua=sisajarakpertama-(5*(12*60));
+//   printf("ini sisa jarak kedua %i", sisajarakkedua);
+//   printf("\n");
+   waktusisaterakhir=sisajarakkedua/2;
+//   printf("ini waktu yang terakhir %i detik", waktusisaterakhir);
+//     printf("\n");
+    waktudetik= waktusisaterakhir + 23*60 + 12*60;
+    printf("Ismail berangkat ke kantor selama %i detik",waktudetik);
+    printf("\n");
+    waktumenit= waktudetik/60;
+    printf("Ismail berangkat ke kantor selama %i menit",waktumenit);
+    printf("\n");
+    waktujam= waktumenit/60;
+    printf("Ismail berangkat ke kantor selama %i jam",waktujam);
+    printf("\n");
+    return 0;
+}
